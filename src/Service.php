@@ -501,7 +501,6 @@ class Service
         } catch (Exception $e){
             $exists = false;
             $this->logger->debug($e->getMessage());
-            return;
         }
         if($exists) {
             $this->logger->info('Deleting data object ' . $object->getId() . ' from es index.');
